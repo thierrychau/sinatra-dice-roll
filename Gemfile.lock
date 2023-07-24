@@ -1,36 +1,24 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.4)
-      public_suffix (>= 2.0.2, < 6.0)
-    domain_name (0.5.20190701)
-      unf (>= 0.0.5, < 1.0.0)
-    ffi (1.15.5)
-    ffi-compiler (1.0.1)
-      ffi (>= 1.0.0)
-      rake
-    http (5.1.1)
-      addressable (~> 2.8)
-      http-cookie (~> 1.0)
-      http-form_data (~> 2.2)
-      llhttp-ffi (~> 0.4.0)
-    http-cookie (1.0.5)
-      domain_name (~> 0.5)
-    http-form_data (2.3.0)
-    llhttp-ffi (0.4.0)
-      ffi-compiler (~> 1.0)
-      rake (~> 13.0)
+    better_errors (2.10.1)
+      erubi (>= 1.0.0)
+      rack (>= 0.9.0)
+      rouge (>= 1.0.0)
+    binding_of_caller (1.0.0)
+      debug_inspector (>= 0.0.1)
+    debug_inspector (1.1.0)
+    erubi (1.12.0)
     multi_json (1.15.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.9)
-    public_suffix (5.0.3)
     puma (6.3.0)
       nio4r (~> 2.0)
     rack (2.2.7)
     rack-protection (3.0.6)
       rack
-    rake (13.0.6)
+    rouge (4.1.2)
     ruby2_keywords (0.0.5)
     sinatra (3.0.6)
       mustermann (~> 3.0)
@@ -44,15 +32,13 @@ GEM
       sinatra (= 3.0.6)
       tilt (~> 2.0)
     tilt (2.2.0)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.8.2)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  http
+  better_errors
+  binding_of_caller
   puma
   sinatra
   sinatra-contrib
